@@ -18,4 +18,4 @@ env:
    - DISTRO=ubuntu-lts OCAML_VERSION=4.08.1
   exclude:
    - arch: ppc64le
-     DISTRO=ubuntu-lts OCAML_VERSION=4.11.0+trunk OCAML_BETA=enable
+     env: DISTRO=ubuntu-lts OCAML_VERSION=4.11.0+trunk OCAML_BETA=enable
