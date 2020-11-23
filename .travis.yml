@@ -14,9 +14,9 @@ env:
    - DISTRO=ubuntu-lts OCAML_VERSION=4.09.1
    - DISTRO=ubuntu-lts OCAML_VERSION=4.08.1
    #Added Power Support Architecture ppc64le
-   - arch: ppc64le
-     DISTRO=ubuntu-lts OCAML_VERSION=4.10.0
-   - arch: ppc64le
-     DISTRO=ubuntu-lts OCAML_VERSION=4.09.1
-   - arch: ppc64le
-     DISTRO=ubuntu-lts OCAML_VERSION=4.08.1
+   - DISTRO=ubuntu-lts OCAML_VERSION=4.10.0
+     arch: ppc64le
+   - DISTRO=ubuntu-lts OCAML_VERSION=4.09.1
+     arch: ppc64le
+   - DISTRO=ubuntu-lts OCAML_VERSION=4.08.1
+     arch: ppc64le
