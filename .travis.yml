@@ -1,8 +1,5 @@
 language: c
 sudo: false
-arch:
-  - amd64
-  - ppc64le
 services:
   - docker
 install: wget https://raw.githubusercontent.com/ocaml/ocaml-travisci-skeleton/master/.travis-docker.sh
@@ -16,6 +13,10 @@ env:
    - DISTRO=ubuntu-lts OCAML_VERSION=4.10.0
    - DISTRO=ubuntu-lts OCAML_VERSION=4.09.1
    - DISTRO=ubuntu-lts OCAML_VERSION=4.08.1
-  exclude:
+   #Added Power Support Architecture ppc64le
    - arch: ppc64le
-     DISTRO=ubuntu-lts OCAML_VERSION=4.11.0+trunk OCAML_BETA=enable
+     DISTRO=ubuntu-lts OCAML_VERSION=4.10.0
+   - arch: ppc64le
+     DISTRO=ubuntu-lts OCAML_VERSION=4.09.1
+   - arch: ppc64le
+     DISTRO=ubuntu-lts OCAML_VERSION=4.08.1
